@@ -1,0 +1,22 @@
+{
+  "name": "testing-pairing-excercise",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "cypress:open": "CYPRESS_ENV=true cypress open --env configFile=production",
+    "cypress:test": "CYPRESS_ENV=true cypress run --spec **/*.feature --env configFile=production",
+    "cypress:report": "allure generate allure-results --clean -o allure-report && allure open allursne-report"
+  },
+  "dependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.1",
+    "cypress": "7.3.0",
+    "cypress-cucumber-preprocessor": "4.1.0",
+    "eslint": "5.16.0",
+    "mocha": "6.2.0",
+    "mocha-allure-reporter": "1.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
+  }
+}

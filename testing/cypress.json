@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://www.zavamed.com/uk",
+  "integrationFolder": "cypress/features",
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.{feature,features}",
+  "chromeWebSecurity": false,
+  "video": true,
+  "reporter": "mocha-allure-reporter"
+}
