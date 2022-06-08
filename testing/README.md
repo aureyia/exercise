@@ -5,7 +5,7 @@ Pair Programming exercise for testing.
 The setup is pretty straightforward:
 ```bash
 git clone https://github.com/aureyia/exercise
-cd pair-programming-exercises/testing
+cd exercise/testing
 npm install
 npm run cypress:open
 ```
