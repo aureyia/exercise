@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "cypress:open": "CONFIG_FILE=production CYPRESS_ENV=true cypress open",
-    "cypress:test:production": "CONFIG_FILE=production NO_COLOR=1 CYPRESS_ENV=true cypress run --env TAGS=\"@e2e-production\"",
+    "cypress:test": "CONFIG_FILE=production NO_COLOR=1 CYPRESS_ENV=true cypress run --env TAGS=\"@e2e-production\"",
     "cypress:report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "dependencies": {
