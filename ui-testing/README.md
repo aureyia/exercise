@@ -4,7 +4,7 @@ Pair Programming exercise for testing.
 ## Setup
 The setup is pretty straightforward:
 ```bash
-git clone https://github.com/healthbridgeltd/pair-programming-exercises
+git clone https://github.com/aureyia/exercise
 cd exercise/ui-testing
 npm install
 npm run cypress:open
