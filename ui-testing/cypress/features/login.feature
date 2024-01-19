@@ -5,8 +5,4 @@ Scenario: Login
   When they complete the "login" form
   Then their account dashboard should be displayed
 
-# Scenario: Navigating Links
-
-# Scenario: Checking Input Fields Exist and entry
-
 # Scenario: 
