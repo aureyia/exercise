@@ -20,7 +20,7 @@ Scenario: Login
   When they complete the form
   Then their account dashboard is displayed
 ```
-And map-out and write the tests to cover that would cover this functionality.
+And map-out and write the tests that would cover this functionality.
 
 ## Running the Tests
 ### NPM Commands
