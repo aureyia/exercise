@@ -5,6 +5,8 @@
   "scripts": {
     "cypress:open": "CONFIG_FILE=production CYPRESS_ENV=true cypress open",
     "cypress:test": "CONFIG_FILE=production NO_COLOR=1 CYPRESS_ENV=true cypress run --env TAGS=\"@e2e-production\"",
+    "cypress:open:win": "$env:CONFIG_FILE=\"production\" cypress open",
+    "cypress:test:win": "$env:CONFIG_FILE=\"production\" cypress run --env TAGS=\"@e2e-production\"",
     "cypress:report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "dependencies": {

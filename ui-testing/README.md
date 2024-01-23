@@ -26,11 +26,19 @@ And map-out and write the tests that would cover this functionality.
 ### NPM Commands
 Once the tests have been set up, we can run them with the Cypress UI: 
 ```bash
+## Linux/MacOS:
 npm run cypress:open
+
+## Windows:
+npm run cypress:open:win
 ```
 We can also run it using the headless electron browser:
 ```bash
+## Linux/MacOS:
 npm run cypress:test
+
+## Windows:
+npm run cypress:test:win
 ```
 ## Reporting
 We are using the allure mocha plugin for creating our reports since it offers us great support with Jenkins. To generate the report we can simply run:
