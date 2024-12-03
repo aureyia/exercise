@@ -1,0 +1,34 @@
+{
+  "name": "@exercise/tests",
+  "version": "1.0.0",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "^20"
+  },
+  "scripts": {
+    "cypress:open:local": "cypress open",
+    "cypress:test:local": "cypress run --env TAGS=\"@integration\""
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "19.1.0",
+    "@cypress/webpack-preprocessor": "5.12.0",
+    "@percy/cli": "1.28.9",
+    "@percy/cypress": "3.1.2",
+    "allure-commandline": "2.29.0",
+    "allure-cypress": "2.15.1",
+    "cypress": "13.4.0",
+    "cypress-file-upload": "5.0.2",
+    "cypress-on-fix": "1.0.2",
+    "path-browserify": "1.0.1",
+    "webpack": "5.94.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true
+    },
+    "e2e": {
+      "stepDefinitions": "support/step_definitions/index.steps.js"
+    }
+  }
+}

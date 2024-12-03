@@ -1,0 +1,62 @@
+{
+  "consumer": {
+    "name": "pact-js-tutorial-consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request for card data",
+      "providerStates": [
+        {
+          "name": "a state"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/cards"
+      },
+      "response": {
+        "body": [
+          {
+            "content": "Example content",
+            "description": "Example description",
+            "footer": "Example footer",
+            "title": "Example Title"
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "13.1.4"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "pact-js-tutorial-provider"
+  }
+}
