@@ -18,5 +18,11 @@ describe('AppController', () => {
     it('should return empty by default', () => {
       expect(appController.getBMIEntries()).toEqual([]);
     });
+
+    it('should update an existing entry', () => {
+      appController.saveBMIEntry({height: 170, weight: 70})
+      const entries = appController.getBMIEntries()[0]
+      expect(appController.getBMIEntries()).toEqual(`BMI entry ${entries.id} updated`);
+    })
   });
 });

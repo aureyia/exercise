@@ -6,6 +6,8 @@ export type BMIEntry = {
   height: number;
   weight: number;
   bmi: number;
+  createdAt: string;
+  updatedAt? :string;
 };
 
 let BMIEntries = []
