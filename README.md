@@ -19,7 +19,7 @@ npm run start
 ```
 
 ## Excercise
-The developers have created a new BMI entry page. Which has one BDD scenario written for it.
+The developers have created a new BMI entry page, which has one BDD scenario written for it:
 ```gherkin
 Feature: BMI Checker
 
